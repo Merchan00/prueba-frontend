@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Formulario</title>
+    <style>
+        input {
+            width: 100%;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body style="display: flex; justify-content: center;">
+    <!--style="display: flex Sirve para agregar propiedades de tipo flex-->
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="" method="get" class="input-group">
+                <h1>Formulario de registro</h1>
+                <div><label for="name">Nombre: </label>
+                    <input id="name" type="text">
+                </div>
+                <div><label for="name">Apellidos: </label>
+                    <input id="name" type="text">
+                </div>
+                <p>
+                    Lugar de residencia: <select name="poblacion" id="poblacion">
+                        <option value="b">Bucaramanga</option>
+                        <option value="f">Floridablanca</option>
+                        <option value="g">Girón</option>
+                        <option value="p">Piedecuesta</option>
+                    </select>
+                </p>
+                <!--class = "input-group" me sirve para agregarle propiedades-->
+                <div><label for="email">Correo electrónico: </label>
+                    <input id="email" type="email">
+                </div>
+                <div>
+                    <label for="pass">Contraseña</label>
+                    <input type="text">
+                </div>
+                <div><label for="tel">Teléfono: </label>
+                    <input id="tel" type="tel">
+                </div>
+
+                <div>
+                    <label for="textarea">
+                        Descripción:
+                    </label>
+                    <br>
+                    <textarea name="Descripción" id="textarea" cols="50" rows="10"></textarea>
+                </div>
+                <button style="width: 100px;">
+                    Enviar
+                </button>
+            </form>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
